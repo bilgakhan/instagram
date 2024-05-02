@@ -12,7 +12,7 @@ class _PostState extends State<Post> {
   bool isLiked = false;
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.sizeOf(context).width;
+    double width = MediaQuery.sizeOf(context).width;
     return SizedBox(
       width: width,
       height: 500,
@@ -96,7 +96,7 @@ class _PostState extends State<Post> {
                         InkWell(
                           onTap: () {
                             isLiked = !isLiked;
-                            print("Bosildi!");
+                            
                             setState(() {});
                           },
                           child: Icon(

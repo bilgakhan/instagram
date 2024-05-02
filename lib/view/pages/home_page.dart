@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.sizeOf(context).width;
+    double width = MediaQuery.sizeOf(context).width;
     return Scaffold(
       appBar: AppBar(
         leading: Padding(
@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             // stories part
             SizedBox(
-              height: 98,
+              height: 90,
               width: width,
               child: const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -66,10 +66,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            const Post(),
-            const Post(),
-            const Post(),
-            const Post(),
             const Post(),
             const Post(),
             const Post(),
